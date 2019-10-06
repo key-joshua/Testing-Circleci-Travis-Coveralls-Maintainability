@@ -10,12 +10,11 @@ const XController = {
     if (datas) {
       return res.status(201).send({message : `Hy You added Successfully This student `, datas});
     }
-
   },
  async retrieve(req, res) {
     const datas = await classStuff.findAll_into_DB()
     if (datas) {
-      return res.status(201).send({message : `Hy You Successfully retrieved all student `, datas});
+      return res.status(200).send({message : `Hy You Successfully retrieved all student `, datas});
     }
   },
  async retrieveOne(req, res) {
@@ -41,14 +40,14 @@ const XController = {
     const datas = await classStuff.update_into_DB(data_to_insert, parseInt(req.params.id));
     return res.status(200).send({message: 'This student updated Successfully', datas});
    },
-  async delete(req, res) {
+ async delete(req, res) {
     const datas_id = await classStuff.findOne_into_DB( parseInt(req.params.id));
      if (datas_id.length === 0) {
        return res.status(404).send({message: 'This student not found'});
      }
 
-    const datas = await classStuff.delete_into_DB( parseInt(req.params.id));
-    return res.status(200).send({message: 'This student are Successfully deleted ', datas});
+    await classStuff.delete_into_DB( datas_id);
+    return res.status(200).send({message: 'This student are Successfully deleted ', datas_id});
    }
 }
-module.exports = XController;
+export default XController;

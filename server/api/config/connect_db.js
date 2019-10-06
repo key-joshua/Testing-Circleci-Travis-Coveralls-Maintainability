@@ -10,9 +10,6 @@ const client = {
 };
 
 let pool = new pg.Pool(client);
-pool.connect()
-.then(() => console.log("Hy Joshua You are Successfully Connected to  Database class"))
-.catch(error => console.log(error))
-.finally(() => client.end);
+pool.connect();
 
 export default pool;
