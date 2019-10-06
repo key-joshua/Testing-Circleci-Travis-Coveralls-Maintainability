@@ -6,11 +6,6 @@
   "scripts": {
     "lint": "eslint",
     "test": "nyc mocha --exit --require @babel/register --require babel-polyfill ./test/*.js",
-    "insert_table": "nodemon --exec babel-node ./server/api/models/database/insert_into_db.js",
-    "create_schema": "nodemon --exec babel-node ./server/api/models/database/schema.js",
-    "create_table": "nodemon --exec babel-node ./server/api/models/database/table.js",
-    "drop_table": "nodemon --exec babel-node ./server/api/models/database/drop.js",
-    "connect_db": "nodemon --exec babel-node ./server/api/config/connect_db.js",
     "server": "nodemon --exec babel-node connection.js",
     "start": "babel-node connection.js",
     "coveralls": "nyc --reporter=lcov --reporter=text-lcov npm test | coveralls"

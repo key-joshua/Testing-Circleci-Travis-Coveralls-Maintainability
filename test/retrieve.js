@@ -18,7 +18,7 @@ describe('my Testing suite', () => {
         })
     })
 
-    it('students should not be able to retrieve single marks',(done)=>{
+    it('students should be able to retrieve single marks',(done)=>{
         const id= 1;
         router()
         .get(`/api/v1/students/${id}`)
