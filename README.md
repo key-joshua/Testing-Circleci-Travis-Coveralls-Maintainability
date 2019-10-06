@@ -1,2 +1,6 @@
-# learn-Testing-Travis-Coveralls-Maintainability
-learn-Testing-Travis-Coveralls-Maintainability
+# learnning-Testing-Travis-Coveralls-Maintainability
+#### learnning about:
+- Testing
+- Travis 
+- Coveralls
+- Maintainability
