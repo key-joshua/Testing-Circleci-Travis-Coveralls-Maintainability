@@ -7,7 +7,7 @@ const router = () => chai.request(app);
 
 
 describe('my Testing suite', () => {
-    it('student should be able to retrieve marks',(done)=>{
+    it('students should be able to retrieve marks',(done)=>{
         router()
         .get('/api/v1/students/')
         .end((error,response)=>{
@@ -18,7 +18,7 @@ describe('my Testing suite', () => {
         })
     })
 
-    it('student should not be able to retrieve single marks',(done)=>{
+    it('students should not be able to retrieve single marks',(done)=>{
         const id= 1;
         router()
         .get(`/api/v1/students/${id}`)
@@ -30,7 +30,7 @@ describe('my Testing suite', () => {
         })
     })
 
-    it('student should not be able to retrieve single marks',(done)=>{
+    it('students should not be able to retrieve single marks',(done)=>{
         const id= 100;
         router()
         .get(`/api/v1/students/${id}`)

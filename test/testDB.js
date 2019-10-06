@@ -1,7 +1,7 @@
 const teststudent=
 [
-    { Name: "Teddy",  Marks: "50%", Level: "Pass" },
-    { Name: "Teddy" } 
+    { Name: "Teddys",  Marks: "50%", Level: "Pass" },
+    { Name: "Teddys" } 
     
 ];
 

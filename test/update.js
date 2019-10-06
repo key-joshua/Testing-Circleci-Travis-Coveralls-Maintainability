@@ -8,7 +8,7 @@ const router = () => chai.request(app);
 
 
 describe('my Testing suite', () => {
-    it('student should be able to update',(done)=>{
+    it('students should be able to update',(done)=>{
         const id= 1;
         router()
         .patch(`/api/v1/students/${id}`)
@@ -21,7 +21,7 @@ describe('my Testing suite', () => {
         })
     })
 
-    it('student should be able to remain update',(done)=>{
+    it('students should be able to remain update',(done)=>{
         const id= 1;
         router()
         .patch(`/api/v1/students/${id}`)
@@ -33,7 +33,7 @@ describe('my Testing suite', () => {
         })
     })
 
-    it('student should not be able to update',(done)=>{
+    it('students should not be able to update',(done)=>{
         const id= 100;
         router()
         .patch(`/api/v1/students/${id}`)

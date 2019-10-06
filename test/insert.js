@@ -8,7 +8,7 @@ const router = () => chai.request(app);
 
 
 describe('my Testing suite', () => {
-    it('student should be able to signup',(done)=>{
+    it('students should be able to signup',(done)=>{
         router()
         .post('/api/v1/students/')
         .send(teststudent[0])
@@ -20,7 +20,7 @@ describe('my Testing suite', () => {
         })
     })
 
-    it('student should not be able to signup',(done)=>{
+    it('students should not be able to signup',(done)=>{
         router()
         .post('/api/v1/students/')
         .send(teststudent[1])
@@ -31,7 +31,7 @@ describe('my Testing suite', () => {
         })
     })
 
-    it('student should not be able to signup',(done)=>{
+    it('students should not be able to signup',(done)=>{
         router()
         .post('/api/v1/students/aabbcc')
         .send(teststudent[1])
