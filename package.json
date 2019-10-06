@@ -1,5 +1,5 @@
 {
-  "name": "learn-Testing",
+  "name": "learn-Testing-Travis-Coveralls-Maintainability",
   "version": "1.0.0",
   "description": "learn-Testing(Travis-Coveralls-Maintainability)",
   "main": "connection.js",
@@ -17,7 +17,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/key-joshua/free_mentors.git"
+    "url": "https://github.com/key-joshua/learn-Testing-Travis-Coveralls-Maintainability.git"
   },
   "author": "Key-Joshua",
   "license": "ISC",
