@@ -1,4 +1,4 @@
-# learnning-Testing-CircleCI-Travis-Coveralls-Maintainability
+# Testing-CircleCI-Travis-Coveralls-Maintainability
 #### learnning about:
 - Testing
 - Circleci
